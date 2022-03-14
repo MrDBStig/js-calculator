@@ -1,13 +1,13 @@
 "use strict";
 
 // BODY
-const bodyClass = "bg-purple-800 bg-gradient-to-br from-blue-300 bg-opacity-25";
+const bodyClass = "bg-sky-700 bg-gradient-to-br from-blue-600 bg-opacity-50";
 const body = document.querySelector("body");
 bodyClass.split(" ").forEach((cls) => body.classList.add(cls));
 
 // CALCULATOR BODY
 const calcBodyClass =
-  "max-w-lg rounded overflow-hidden shadow-2xl bg-pink-700 bg-opacity-75 bg-gradient-to-tr from-gray-800 flex";
+  "max-w-lg rounded overflow-hidden shadow-2xl bg-fuchsia-600 bg-opacity-75 bg-gradient-to-tl from-neutral-700 flex";
 const calcBody = document.querySelector(".calcBody");
 calcBodyClass.split(" ").forEach((cls) => calcBody.classList.add(cls));
 
@@ -37,10 +37,10 @@ const buttons = document.querySelectorAll("button");
 buttons.forEach((btn) => addClasses(btn));
 
 function addClasses(button) {
-  const btnNumberClass = "hover:bg-green-500 border-green-500";
-  const btnClearClass = "hover:bg-orange-500 border-orange-500";
-  const btnOptClass = "hover:bg-blue-500 border-blue-500";
-  const btnEqClass = "hover:bg-red-500 border-red-500";
+  const btnNumberClass = "hover:bg-indigo-500 border-indigo-500";
+  const btnClearClass = "hover:bg-red-500 border-red-500";
+  const btnOptClass = "hover:bg-orange-500 border-orange-500";
+  const btnEqClass = "hover:bg-green-500 border-green-500";
   const btnDecClass = "hover:bg-yellow-500 border-yellow-500";
 
   if (button.classList.value === "number") {
