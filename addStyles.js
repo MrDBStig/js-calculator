@@ -13,20 +13,20 @@ calcBodyClass.split(" ").forEach((cls) => calcBody.classList.add(cls));
 
 //OUTPUT
 const outputClass =
-  "flex flex-col w-3/4 h-12 justify-center items-end m-1 bg-gray-300 text-gray-900 font-semibold px-2 border border-black hover:border-gray-500 rounded";
+  "flex flex-col w-3/4 h-12 overflow-hidden justify-center items-end m-1 bg-gray-300 text-gray-900 font-semibold px-2 border border-black hover:border-gray-500 rounded";
 const output = document.querySelector(".output");
 outputClass.split(" ").forEach((cls) => output.classList.add(cls));
 
 // PREVIOUS NUMBER
 const previousNumberClass =
-  "flex max-w-lg h-1/3 pb-5 pt-1 text-gray-600 text-xs";
+  "flex overflow-hidden max-w-lg h-1/3 pb-2 pt-1 text-gray-600 text-xs";
 const previousNumber = document.querySelector(".previousNumber");
 previousNumberClass
   .split(" ")
   .forEach((cls) => previousNumber.classList.add(cls));
 
 // CURRENT NUMBER
-const currentNumberClass = "flex max-w-lg h-2/3 pb-2 text-xl";
+const currentNumberClass = "flex overflow-hidden max-w-lg h-2/3 pb-2 text-xl";
 const currentNumber = document.querySelector(".currentNumber");
 currentNumberClass
   .split(" ")
